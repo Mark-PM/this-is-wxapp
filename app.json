@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/news",
+    "pages/more/login",
+    "pages/more/append",
+    "pages/more/more",
+    "pages/more/about"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#63a2e9",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "完满书院家",
+    "backgroundColor": "#63a2e9",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#7f848a",
+    "selectedColor": "#7acfa6",
+    "backgroundColor": "#f7f6fb",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "这是主页",
+        "iconPath": "images/index/index.png",
+        "selectedIconPath": "images/index/index@active.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "书院资讯",
+        "iconPath": "images/index/news.png",
+        "selectedIconPath": "images/index/news@active.png"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "了解更多",
+        "iconPath": "images/index/more.png",
+        "selectedIconPath": "images/index/more@active.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}

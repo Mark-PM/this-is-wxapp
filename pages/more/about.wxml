@@ -1,0 +1,70 @@
+<!--about.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="black-cover"></view>
+    <image class="logo" src="/images/more/logo.png"></image>
+    <image class="title" src="/images/more/title.png"></image>
+  </view>
+  <view class="content">
+    <view class="version">
+      <view class="version-title">
+        <text class="title-name">完满书院家</text>
+        <text class="version-text">v0.0.1</text>
+        <text class="version-text">私测</text>
+      </view>
+      <view bindtap="toggleLog">
+        <text class="version-log-link" wx:if="{{!showLog}}">更新日志</text> 
+        <text class="version-log-link" wx:else>简介</text> 
+      </view>
+    </view>
+    <view class="describe" wx:if="{{!showLog}}">
+        <text class="desc-title">简介</text>
+        <text class="desc-content">完满书院家是一个微信小程序，在移通学院书院制管理的情况下，有利于更好的进行书院管理，便于书院学子的生活。</text>
+        <text class="desc-content">完满书院家是碎片式、一站式、一体化书院移动门户，适用于书院老师及学生。</text>
+        <text class="desc-content">完满书院家更是/更有...（期待您的发现）</text>
+    </view>
+<!--修复日志-->
+    <view class="log-list" wx:else>
+      
+      <view class="describe">
+          <view class="desc-title">
+            <text class="desc-v">v0.0.7 内测版</text>
+            <text class="desc-time">2016.12.5</text>
+          </view>
+          <text class="desc-content">修复BUG</text>
+          <view class="desc-list">
+            <text class="desc-list-item">11111111111111111111111111111</text>
+            <text class="desc-list-item">11111111111111111111111111111</text>
+            <text class="desc-list-item">11111111111111111111111111111</text>
+            <text class="desc-list-item">11111111111111111111111111111</text>
+            <text class="desc-list-item">11111111111111111111111111111</text>
+            <text class="desc-list-item">11111111111111111111111111111</text>
+          </view>
+          <text class="desc-content">优化完善</text>
+          <view class="desc-list">
+            <text class="desc-list-item">11111111111111111111111111111</text>
+            <text class="desc-list-item">11111111111111111111111111111</text>
+            <text class="desc-list-item">11111111111111111111111111111</text>
+            <text class="desc-list-item">11111111111111111111111111111</text>
+            <text class="desc-list-item">11111111111111111111111111111</text>
+            <text class="desc-list-item">11111111111111111111111111111</text>
+          </view>
+      </view>
+      <view class="describe">
+          <view class="desc-title">
+            <text class="desc-v">v0.0.6 内测版</text>
+            <text class="desc-time">2016.12.1</text>
+          </view>
+          <text class="desc-content">开启内测</text>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="footer-lanshan">
+        <image src="/images/more/lanshan.png"></image>
+        <text>鑫鹏工作室</text>
+    </view>
+    <text>重邮移通/大数据软工 · 鑫鹏自主创意</text>
+    <text>Copyright @ 2020 All Rights Reserved</text>
+  </view>
+</view>
